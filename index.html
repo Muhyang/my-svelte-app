@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <title>Newsletter Sign-up</title>
+    </head>
+    <body
+        style="background-image: url(./img/bg-newsletter.png)"
+        class="flex items-center justify-center h-screen font-sans bg-no-repeat bg-cover"
+    >
+        <div
+            class="bg-transparent bg-mobile flex max-w-screen-lg w-auto shadow-2xl p-8 rounded-2xl pl-12 form-container backdrop-blur-md"
+        >
+            <div class="form-content">
+                <form id="newsletter-form" action="#" method="POST">
+                    <h1 class="mb-4 mt-20">
+                        <span class="text-6xl font-bold pb-8 text-white"
+                            >Stay Updated!</span
+                        >
+                    </h1>
+                    <p class="mb-6 text-xl text-white">
+                        Join 60,000+ product managers receiving monthly updates
+                        on:
+                    </p>
+                    <ul class="mb-6 text-white">
+                        <li class="mt-4 mb-4">
+                            <label for="discovery" class="default:ring-2">
+                                <input
+                                    type="checkbox"
+                                    id="discovery"
+                                    name="topics[]"
+                                    value="discovery"
+                                    class="w-6 h-6 rounded-full text-orange-500 outline-0 focus:ring-0 or focus:ring-transparent"
+                                />
+                                Product discovery and building what matters
+                            </label>
+                        </li>
+                        <li class="mt-4 mb-4">
+                            <label for="measuring">
+                                <input
+                                    type="checkbox"
+                                    id="measuring"
+                                    name="topics[]"
+                                    value="measuring"
+                                    class="w-6 h-6 rounded-full text-orange-500 outline-none focus:ring-0 or focus:ring-transparent"
+                                />
+                                Measuring to ensure updates are a success
+                            </label>
+                        </li>
+                        <li class="mt-4 mb-4">
+                            <label for="more">
+                                <input
+                                    type="checkbox"
+                                    id="more"
+                                    name="topics[]"
+                                    value="more"
+                                    class="w-6 h-6 rounded-full text-orange-500 focus:ring-0 or focus:ring-transparent"
+                                />
+                                And much more!
+                            </label>
+                        </li>
+                    </ul>
+                    <label for="email" class="text-white block font-semibold"
+                        >Email address</label
+                    >
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="email@company.com"
+                        required
+                        class="border border-gray-300 rounded py-4 px-4 mt-2 block w-9/12"
+                    />
+                    <button
+                        type="submit"
+                        id="submit-button"
+                        class="bg-slate-700 hover:bg-gradient-to-r from-red-500 to-orange-500 text-white font-bold py-4 px-4 rounded-lg mt-4 w-9/12"
+                        disabled
+                    >
+                        Subscribe to monthly newsletter
+                    </button>
+                </form>
+                <div
+                    class="newsletter-success hidden"
+                    id="success-message-container"
+                >
+                    <h2 class="text-white text-2xl font-bold mb-4">
+                        Thanks for subscribing!
+                    </h2>
+                    <p class="text-white mb-2">
+                        A confirmation email has been sent to
+                        <span id="subscribed-email" class="font-semibold"></span
+                        >.
+                    </p>
+                    <p class="text-white">
+                        Please open it and click the button inside to confirm
+                        your subscription.
+                    </p>
+                    <button
+                        id="dismiss-button"
+                        class="bg-slate-700 hover:bg-gradient-to-r from-red-500 to-orange-500 text-white font-bold py-4 px-4 rounded-lg mt-4"
+                    >
+                        Dismiss Message
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div
+            class="fixed bottom-0 left-0 w-full bg-gradient-to-r from-red-500 to-orange-500 p-4 text-white text-center"
+        >
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                class="hover:text-transparent bg-clip-text bg-black"
+                >Frontend Mentor</a
+            >. Coded by
+            <a
+                href="https://www.linkedin.com/in/jonathan-nahuel-leguiza-32203a18a/"
+                target="_blank"
+                class="hover:text-transparent bg-clip-text bg-black"
+                >Jonathan Nahuel Leguiza</a
+            >
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
