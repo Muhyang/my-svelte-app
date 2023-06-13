@@ -56,3 +56,36 @@
         flex-direction: column;
     }
 }
+
+/* Estilos para o footer */
+footer {
+    background-image: linear-gradient(to right, #ff7802e6, #ff000098);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para os ícones */
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #000;
+}
+
+/* Estilos adicionais conforme necessário */
